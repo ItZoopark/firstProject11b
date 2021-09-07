@@ -12,15 +12,11 @@ def calcTwoNumberSum(array, target):
     return count
 
 
-def sumStupid(x, y):
-    return x + y
-
-
 def calcTwoNumberSumBetter(a, target):
     i = 0
     j = len(a) - 1
     while i < j:
-        sum2 = sumStupid(a[i], a[j])
+        sum2 = a[i] + a[j]
         if sum2 > target:
             j -= 1
         elif sum2 < target:
